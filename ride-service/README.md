@@ -65,8 +65,9 @@ Each service is containerized using Docker and orchestrated with `docker-compose
 ## ⚙️ How to Run Locally
 
 ### 1. Prerequisites
-
-- Docker & Docker Compose installed
+Make sure the following are installed:
+- Docker
+- Docker Compose
 
 ### 2. Clone the Repository
 
@@ -75,23 +76,37 @@ git clone https://github.com/your-username/ride-sharing-platform.git
 cd ride-sharing-platform
 ```
 
-### 3. Run All Services
+### 3. Run All Services with Docker Compose
+This will spin up all services and dependencies (User, Ride, Redis, MongoDB):
 
 ```bash
 docker-compose up --build
 ```
+Expected running services:
+- 🧍 User Service → http://localhost:8001
+- 🚕 Ride Service → http://localhost:8002
+- 🧠 Redis → localhost:6379
+- 🛢️ MongoDB → localhost:27017
 
 ### 4. Test Services (Example with HTTPie or Curl)
+Once the services are up, test endpoints using curl, httpie, or Postman.
 
 ```bash
 # Create a user
-http POST localhost:8001/users username=haiqal password=secret
+curl -X POST http://localhost:8001/users \
+  -H "Content-Type: application/json" \
+  -d '{"id": "u001", "name": "Kevin", "role": "rider"}'
+
+# Get a user
+curl http://localhost:8001/users/u001
 
 # Create a ride
-http POST localhost:8002/rides id=ride123 driver="haiqal" status="available"
+curl -X POST http://localhost:8002/rides \
+  -H "Content-Type: application/json" \
+  -d '{"id": "r123", "driver": "Dewi", "status": "pending"}'
 
-# Confirm payment
-http POST localhost:8003/payments ride_id=ride123 amount=50000
+# Get a ride
+curl http://localhost:8002/rides/r123
 ```
 
 ---
