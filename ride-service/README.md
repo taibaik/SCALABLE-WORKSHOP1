@@ -34,8 +34,8 @@ Our system consists of several independently scalable microservices:
 
 ## ⚙️ Infrastructure & Tooling
 -	🧠 Redis Caching
-    o	Used by both services to cache user and ride data.
-    o	Reduces access time and improves response performance.
+  -	Used by both services to cache user and ride data.
+  -	Reduces access time and improves response performance.
 -	🛢️ Databases: 
     o	MongoDB for User and Ride Services
 -	🐳 Docker 
