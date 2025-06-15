@@ -9,7 +9,8 @@
 ## 📘 Project Overview
 RideNow is a scalable microservices project that implements the core backend functionality of a ride-hailing application using FastAPI. The system is composed of two independent services:
 -	User Service: Manages user-related operations, including registration and data management. Each user is assigned a unique identifier upon registration. 
--	Ride Service: Handles ride requests and manages the status of each ride throughout its lifecycle. 
+-	Ride Service: Handles ride requests and manages the status of each ride throughout its lifecycle.
+  
 These services form the foundational backend of our ride-sharing application, developed with a focus on scalability, modularity, and maintainability. Performance is optimized using Redis caching, with each component fully containerized with Docker and communicating over RESTful APIs. 
 
 
