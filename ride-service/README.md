@@ -32,7 +32,7 @@ Our system consists of several independently scalable microservices:
 💸 Payment Service
 -	Simulates payment confirmation and transaction logging (Planned) 
 
-⚙️ Infrastructure & Tooling
+## ⚙️ Infrastructure & Tooling
 -	🧠 Redis Caching
     o	Used by both services to cache user and ride data.
     o	Reduces access time and improves response performance.
