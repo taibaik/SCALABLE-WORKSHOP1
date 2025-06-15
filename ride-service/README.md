@@ -7,7 +7,7 @@
 ---
 
 ## 📘 Project Overview
-RideNow is a scalable microservices project that implements the core backend functionality of a ride-hailing application using FastAPI. The system is composed of two independent services:
+**RideNow** is a scalable microservices project that implements the core backend functionality of a ride-hailing application using FastAPI. The system is composed of two independent services:
 -	User Service: Manages user-related operations, including registration and data management. Each user is assigned a unique identifier upon registration. 
 -	Ride Service: Handles ride requests and manages the status of each ride throughout its lifecycle.
   
@@ -17,19 +17,28 @@ These services form the foundational backend of our ride-sharing application, de
 
 ## 🏗️ Architecture Highlights
 
-Our system consists of multiple microservices:
+🧱 System Overview
+Our system consists of several independently scalable microservices:
+🧍 User Service
+-	Manages user registration and profile retrieval.
+-	 Assigns a unique ID to each user upon registration.
+🚕 Ride Service
+-	Handles ride creation and status management.
+-	Each ride includes a driver and a status 
+💸 Payment Service
+-	Simulates payment confirmation and transaction logging (Planned) 
 
-- **🧍 User Service**
-  -	Manages user registration and profile retrieval.
-  -	Assigns a unique ID to each user upon registration.
+⚙️ Infrastructure & Tooling
+-	🧠 Redis Caching
+o	Used by both services to cache user and ride data.
+o	Reduces access time and improves response performance.
+-	🛢️ Databases: 
+o	MongoDB for User and Ride Services
+-	🐳 Docker 
+o	Each service is containerized and run using docker-compose
+-	🔀 API Gateway / Reverse Proxy 
+o	Optional future enhancement for unified routing.
 
-- **🚕 Ride Service** – Handles ride creation, ride status, and ride listings.
-- **💸 Payment Service** – Simulates payment confirmation and transaction logging.
-- **🧠 Redis Caching** – Used across services for faster data retrieval.
-- **🔀 API Gateway / Reverse Proxy** – (Optional future enhancement)
-- **🛢️ Databases**:
-  - MongoDB (User & Ride services)
-  - PostgreSQL (Payment service)
 
 Each service is containerized using Docker and orchestrated with `docker-compose`.
 
