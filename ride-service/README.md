@@ -18,7 +18,6 @@ These services form the foundational backend of our ride-sharing application, de
 ## 🏗️ Architecture Highlights
 
 🧱 System Overview
-
 Our system consists of several independently scalable microservices:
 
 🧍 User Service
@@ -27,7 +26,8 @@ Our system consists of several independently scalable microservices:
   
 🚕 Ride Service
 -	Handles ride creation and status management.
--	Each ride includes a driver and a status 
+-	Each ride includes a driver and a status
+  
 💸 Payment Service
 -	Simulates payment confirmation and transaction logging (Planned) 
 
