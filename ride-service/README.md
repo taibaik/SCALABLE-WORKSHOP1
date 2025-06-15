@@ -54,8 +54,8 @@ Each service is containerized using Docker and orchestrated with `docker-compose
 
 | Layer             | Tech                     |
 |------------------|--------------------------|
-| Backend Framework| FastAPI (Python)         |
-| Database         | MongoDB, PostgreSQL      |
+| Backend Framework| Python 3.10, FastAPI     |
+| Database         | MongoDB                  |
 | Caching          | Redis                    |
 | Containerization | Docker, Docker Compose   |
 | API Format       | RESTful JSON APIs        |
