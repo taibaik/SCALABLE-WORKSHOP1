@@ -18,6 +18,7 @@ These services form the foundational backend of our ride-sharing application, de
 ## 🏗️ Architecture Highlights
 
 🧱 System Overview
+
 Our system consists of several independently scalable microservices:
 
 🧍 User Service
