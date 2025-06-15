@@ -13,14 +13,16 @@ RideNow is a scalable microservices project that implements the core backend fun
   
 These services form the foundational backend of our ride-sharing application, developed with a focus on scalability, modularity, and maintainability. Performance is optimized using Redis caching, with each component fully containerized with Docker and communicating over RESTful APIs. 
 
-
 ---
 
 ## 🏗️ Architecture Highlights
 
 Our system consists of multiple microservices:
 
-- **🧍 User Service** – Manages user registration, login, and profiles.
+- **🧍 User Service**
+  -	Manages user registration and profile retrieval.
+  -	Assigns a unique ID to each user upon registration.
+
 - **🚕 Ride Service** – Handles ride creation, ride status, and ride listings.
 - **💸 Payment Service** – Simulates payment confirmation and transaction logging.
 - **🧠 Redis Caching** – Used across services for faster data retrieval.
