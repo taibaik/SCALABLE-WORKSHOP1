@@ -18,10 +18,14 @@ These services form the foundational backend of our ride-sharing application, de
 ## 🏗️ Architecture Highlights
 
 🧱 System Overview
+
 Our system consists of several independently scalable microservices:
+
 🧍 User Service
+
 -	Manages user registration and profile retrieval.
 -	 Assigns a unique ID to each user upon registration.
+-	 
 🚕 Ride Service
 -	Handles ride creation and status management.
 -	Each ride includes a driver and a status 
