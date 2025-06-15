@@ -33,22 +33,18 @@ Our system consists of several independently scalable microservices:
 -	Simulates payment confirmation and transaction logging (Planned) 
 
 ## ⚙️ Infrastructure & Tooling
--	🧠 Redis Caching
+🧠 Redis Caching
+- Used by both services to cache user and ride data.
+- Reduces access time and improves response performance.
   
-    o	Used by both services to cache user and ride data.
- 	
-    o	Reduces access time and improves response performance.
-  
--	🛢️ Databases:
-  
-    o	MongoDB for User and Ride Services
--	🐳 Docker
-  
-    o	Each service is containerized and run using docker-compose
--	🔀 API Gateway / Reverse Proxy
-  
-    o	Optional future enhancement for unified routing.
+🛢️ Databases:
+- MongoDB for User and Ride Services
 
+🐳 Docker
+- Each service is containerized and run using docker-compose
+
+🔀 API Gateway / Reverse Proxy
+- Optional future enhancement for unified routing.
 
 Each service is containerized using Docker and orchestrated with `docker-compose`.
 
