@@ -37,7 +37,7 @@ Our system consists of several independently scalable microservices:
   
     o	Used by both services to cache user and ride data.
  	
- 	  o Reduces access time and improves response performance.
+    o	Reduces access time and improves response performance.
   
 -	🛢️ Databases:
   
