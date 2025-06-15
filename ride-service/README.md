@@ -1,7 +1,6 @@
-# 🚗 Ride Sharing Platform – Scalable Microservices Architecture
+# 🚗 RideNow – Scalable Ride Sharing Platform
 
 ## 🧑‍💻 Team Members
-
 - Muhammad Haiqal Dwikusuma – 22/496221/PA/21330  
 - Kevin Beckham Hotama - 22/496130/PA/21308
 
